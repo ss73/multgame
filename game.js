@@ -70,6 +70,11 @@ function mouseClicked() {
   }
 }
 
+function touchEnded() {
+  mouseClicked();  
+}
+
+
 function drawPickMultRange() {
   background(0);
   textSize(64);
