@@ -29,11 +29,6 @@ function setup() {
   var canvas = createCanvas(side, side);
   canvas.parent("sketch");
   scale = side / max_size;
-  console.log("Sketch size: " + side)
-  console.log("Window size: " + windowWidth + " x " + windowHeight)
-  console.log("Display size: " + displayWidth + " x " + displayHeight)
-  console.log(pixelDensity())
-  //pixelDensity(0.1);
 }
 
 function draw() {
@@ -153,6 +148,7 @@ function clickPickMultRange(mouseX, mouseY) {
       questions[i] = [factor1, factor2];
     }
     current_question = 0;
+    timer = START_TIME;
     state = PREP;
   }
 }
